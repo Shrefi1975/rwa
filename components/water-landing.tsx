@@ -15,9 +15,9 @@ const brands = [
 function SiteHeader() {
   return (
     <header className="site-header">
-      <a href="#top" className="brand" aria-label="روافد جدة، الرئيسية">
-        <span className="brand-mark" aria-hidden="true"><span /></span>
-        <span>رَوافِد <small>جدة</small></span>
+      <a href="#top" className="brand" aria-label="روى، الصفحة الرئيسية">
+        <img className="brand-logo" src="/rowa-logo.jpg" alt="" aria-hidden="true" />
+        <span className="brand-name">روى<small>مياه تصلك لبابك</small></span>
       </a>
       <a className="header-order" href="#order">سجّل الآن <ArrowLeft size={15} aria-hidden="true" /></a>
     </header>
@@ -29,14 +29,13 @@ function HeroBanner() {
     <section id="top" className="hero-banner hero-poster-banner" aria-label="عروض توصيل المياه في جدة">
       <a href="#order" className="hero-poster-link" aria-label="اطلب المياه المفضلة لديك للتوصيل إلى المنزل">
         <picture className="hero-poster-picture">
-          <source media="(min-width: 761px)" srcSet="/jeddah-water-hero-campaign.png" />
+          <source media="(min-width: 761px)" srcSet="/rowa-desktop-hero.jpg" />
           <img src="/hero-water-poster-user.jpg" alt="توصيل مياه الشرب في جدة مع مجموعة من العلامات التجارية المفضلة" className="hero-poster-image" />
         </picture>
         <span className="hero-poster-copy">
           <span className="hero-copy-kicker"><MapPin size={15} aria-hidden="true" /> توصيل مجاني داخل جدة</span>
           <h1>مياهك المفضلة،<br />واصلة لبابك.</h1>
-          <span className="hero-copy-description">اختاري من أشهر الماركات واطلبيها بكل سهولة.</span>
-          <span className="hero-copy-button">تسوقي الآن <ArrowLeft size={17} aria-hidden="true" /></span>
+          <span className="hero-copy-description" style={{ lineHeight: 0, color: '#000000' }}>اختار من أشهر الماركات</span>
         </span>
       </a>
     </section>
@@ -94,8 +93,11 @@ function SiteFooter() {
   return (
     <>
       <footer className="site-footer">
-        <span>رَوافِد جدة</span>
-        <span>عروض محلية، على مزاجك.</span>
+        <a href="#top" className="footer-brand" aria-label="روى، العودة إلى الأعلى">
+          <img className="footer-logo" src="/rowa-logo.jpg" alt="" aria-hidden="true" />
+          <span><strong>روى</strong><small>مياهك المفضلة، نوصّلها لبابك</small></span>
+        </a>
+        <p className="footer-description">توصيل مجاني داخل جدة، بخيارات تناسبك وجودة تثق بها.</p>
       </footer>
       <WaterContactActions />
     </>
