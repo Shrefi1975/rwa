@@ -212,3 +212,76 @@ button, input { font: inherit; }
   .offer-icon { width: 42px; height: 42px; }
   .offer-banner h2 { font-size: 19px; }
 }
+
+.site-footer {
+  display: block;
+  padding: 48px clamp(16px, 5vw, 40px) 24px;
+  border: 0;
+  color: #f4fbfc;
+  background: radial-gradient(ellipse at 50% -5%, rgba(69,180,190,.27), transparent 45%), linear-gradient(145deg, #0b334b 0%, #14576b 100%);
+}
+.footer-container { display: flex; width: min(960px, 100%); flex-direction: column; align-items: center; gap: 28px; margin: 0 auto; text-align: center; }
+.footer-brand-showcase { display: flex; flex-direction: column; align-items: center; }
+.footer-logo-large { display: block; width: min(176px, 54vw); height: min(176px, 54vw); padding: 8px; border: 1px solid rgba(255,255,255,.72); border-radius: 30px; background: #f7f8f4; box-shadow: 0 18px 48px rgba(2,25,39,.24); object-fit: contain; }
+.footer-kicker { margin-top: 19px; color: #a9e8d7; font-size: 12px; font-weight: 800; letter-spacing: .02em; }
+.footer-brand-showcase h2 { margin: 4px 0 0; color: #fff; font-size: clamp(28px, 5vw, 36px); font-weight: 900; line-height: 1.3; }
+.footer-description { max-width: 52ch; margin: 8px 0 0; color: #d5e6e9; font-size: 15px; line-height: 1.9; }
+.footer-contact-card { display: grid; width: min(780px, 100%); grid-template-columns: minmax(150px, 190px) minmax(0, 1fr); align-items: center; gap: 22px; padding: 20px 24px; border: 1px solid rgba(216,245,246,.18); border-radius: 24px; background: rgba(255,255,255,.07); box-shadow: 0 16px 40px rgba(4,31,44,.12); }
+.footer-manager { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: right; }
+.site-footer .footer-manager > span { color: #bcd8df; font-size: 13px; font-weight: 700; }
+.footer-manager strong { padding: 3px 12px 6px; border-radius: 999px; color: #fff; background: rgba(47,179,165,.3); font-size: 25px; font-weight: 900; line-height: 1.4; }
+.footer-contact-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.footer-contact-link { display: flex; min-width: 0; min-height: 68px; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid rgba(216,245,246,.16); border-radius: 16px; color: #fff; background: rgba(255,255,255,.07); text-align: right; text-decoration: none; transition: background-color .18s ease, transform .18s ease; }
+.footer-contact-link:hover { transform: translateY(-2px); background: rgba(255,255,255,.13); }
+.footer-contact-link:focus-visible, .footer-legal-links a:focus-visible, .policy-page a:focus-visible { outline: 3px solid #83e2ce; outline-offset: 3px; }
+.footer-contact-link svg { flex: 0 0 auto; color: #9ce0d2; }
+.footer-contact-link span { display: flex; min-width: 0; flex-direction: column; gap: 3px; }
+.footer-contact-link small { color: #c1d9df; font-size: 11px; }
+.footer-contact-link strong { overflow-wrap: anywhere; font-size: 14px; font-weight: 800; }
+.footer-whatsapp-link { border-color: rgba(101,222,156,.24); background: rgba(40,178,105,.14); }
+.footer-whatsapp-link:hover { background: rgba(40,178,105,.24); }
+.footer-whatsapp-link svg { color: #70e0a1; }
+.footer-legal-links { display: flex; width: 100%; flex-wrap: wrap; justify-content: center; gap: 10px 24px; padding-top: 20px; border-top: 1px solid rgba(216,245,246,.15); }
+.footer-legal-links a { padding: 4px; color: #d9e8eb; font-size: 13px; font-weight: 700; text-decoration: none; transition: color .18s ease; }
+.footer-legal-links a:hover { color: #a9e8d7; }
+.footer-copyright { margin: -15px 0 0; color: #aac4ca; font-size: 11px; }
+
+.policy-page { min-height: 100svh; padding: 24px; color: #173e52; background: #f1f7f7; }
+.policy-container { width: min(900px, 100%); margin: 0 auto; }
+.policy-header { display: flex; min-height: 56px; align-items: center; justify-content: space-between; gap: 16px; }
+.policy-home { display: inline-flex; align-items: center; gap: 10px; color: #143e58; font-size: 19px; font-weight: 900; text-decoration: none; }
+.policy-home img { width: 48px; height: 48px; padding: 2px; border-radius: 13px; background: #f8f9f5; object-fit: contain; }
+.policy-back { display: inline-flex; min-height: 42px; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #dce9e9; border-radius: 12px; color: #25576a; background: #fff; font-size: 13px; font-weight: 800; text-decoration: none; }
+.policy-card { margin: 24px 0 40px; padding: clamp(24px, 5vw, 52px); border: 1px solid #e0ebeb; border-radius: 28px; background: #fff; box-shadow: 0 20px 60px rgba(20,70,89,.08); }
+.policy-eyebrow { color: #168a79; font-size: 12px; font-weight: 800; }
+.policy-card h1 { margin: 12px 0 8px; color: #123f58; font-size: clamp(30px, 6vw, 42px); font-weight: 900; line-height: 1.35; }
+.policy-intro { max-width: 66ch; margin: 0; color: #587482; font-size: 16px; line-height: 1.9; }
+.policy-sections { display: grid; gap: 22px; margin-top: 34px; }
+.policy-section { padding-bottom: 20px; border-bottom: 1px solid #e8efef; }
+.policy-section:last-child { padding-bottom: 0; border-bottom: 0; }
+.policy-section h2 { margin: 0 0 9px; color: #14526a; font-size: 18px; font-weight: 900; }
+.policy-section p, .policy-section li { color: #526d79; font-size: 14px; line-height: 1.95; }
+.policy-section p { margin: 0 0 8px; }
+.policy-section p:last-child { margin-bottom: 0; }
+.policy-section ul { display: grid; gap: 5px; margin: 10px 0 0; padding-inline-start: 22px; }
+.policy-updated { margin: 26px 0 14px; color: #7b9098; font-size: 12px; }
+.policy-contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 18px; padding: 16px 18px; border: 1px solid #dcefe9; border-radius: 16px; color: #1c5d57; background: #f0faf6; font-size: 13px; font-weight: 700; }
+.policy-contact a { color: #155d78; font-weight: 900; text-decoration: none; }
+
+@media (max-width: 640px) {
+  .site-footer { padding: 38px 16px calc(22px + env(safe-area-inset-bottom)); }
+  .footer-container { gap: 24px; }
+  .footer-logo-large { width: min(160px, 54vw); height: min(160px, 54vw); border-radius: 26px; }
+  .footer-description { max-width: 36ch; font-size: 14px; }
+  .footer-contact-card { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 18px; border-radius: 20px; }
+  .footer-manager { align-items: center; text-align: center; }
+  .footer-contact-links { grid-template-columns: minmax(0, 1fr); }
+  .footer-contact-link { justify-content: center; text-align: center; }
+  .footer-legal-links { gap: 8px 18px; }
+  .policy-page { padding: 16px; }
+  .policy-header { gap: 8px; }
+  .policy-card { margin-top: 18px; padding: 24px 20px; border-radius: 22px; }
+  .policy-intro { font-size: 14px; }
+  .policy-sections { gap: 18px; margin-top: 26px; }
+  .policy-contact { justify-content: center; text-align: center; }
+}
