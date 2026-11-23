@@ -61,7 +61,7 @@ function OrderSection() {
     <section id="order" className="order-section" aria-labelledby="order-heading">
       <div className="order-copy">
         <span className="section-kicker">طلبك بخطوات بسيطة</span>
-        <h2 id="order-heading">اطلبها الآن،<br /><span>وتوصلك إلى باب بيتك مجانًا</span></h2>
+        <h2 id="order-heading">اطلبها الآن،<br /><span>توصلك لبيتك مجانًا</span></h2>
       </div>
       <div className="lead-card"><WaterOrderForm /></div>
     </section>
