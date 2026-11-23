@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowLeft, BadgePercent, MapPin, Sparkles } from 'lucide-react'
+import { ArrowDown, ArrowLeft, BadgePercent, MapPin, MessageCircle, Phone, Sparkles } from 'lucide-react'
 import { WaterContactActions } from '@/components/water-contact-actions'
 import { WaterOrderForm } from '@/components/water-order-form'
 
@@ -92,12 +92,37 @@ function BrandsSection() {
 function SiteFooter() {
   return (
     <>
-      <footer className="site-footer">
-        <a href="#top" className="footer-brand" aria-label="روى، العودة إلى الأعلى">
-          <img className="footer-logo" src="/rowa-logo.jpg" alt="" aria-hidden="true" />
-          <span><strong>روى</strong><small>مياهك المفضلة، نوصّلها لبابك</small></span>
-        </a>
-        <p className="footer-description">توصيل مجاني داخل جدة، بخيارات تناسبك وجودة تثق بها.</p>
+      <footer className="site-footer" aria-labelledby="footer-brand-heading">
+        <div className="footer-container">
+          <div className="footer-brand-showcase">
+            <img className="footer-logo-large" src="/rowa-logo.jpg" alt="شعار روى" />
+            <span className="footer-kicker">مياهك المفضلة، من بابنا لبابك</span>
+            <p className="footer-description">مياه نقية من علامات تثق بها، نوصلها إلى منزلك في جدة بكل سهولة وعناية.</p>
+          </div>
+
+          <section className="footer-contact-card" aria-label="التواصل مع مدير المبيعات">
+            <div className="footer-manager">
+              <span>مدير المبيعات</span>
+              <strong>أبو فيصل</strong>
+            </div>
+            <div className="footer-contact-links">
+              <a className="footer-contact-link" href="tel:+966560757063">
+                <Phone size={19} aria-hidden="true" />
+                <span><small>اتصل بنا</small><strong dir="ltr">+966 56 075 7063</strong></span>
+              </a>
+              <a className="footer-contact-link footer-whatsapp-link" href="https://wa.me/966560757063" target="_blank" rel="noopener noreferrer">
+                <MessageCircle size={19} aria-hidden="true" />
+                <span><small>يسعدنا خدمتك</small><strong>تواصل عبر واتساب</strong></span>
+              </a>
+            </div>
+          </section>
+
+          <nav className="footer-legal-links" aria-label="السياسات">
+            <a href="/privacy">سياسة الخصوصية</a>
+            <a href="/terms">سياسة الاستخدام</a>
+          </nav>
+          <p className="footer-copyright">جميع الحقوق محفوظة لمتجر روى.</p>
+        </div>
       </footer>
       <WaterContactActions />
     </>
