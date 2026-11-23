@@ -285,3 +285,9 @@ button, input { font: inherit; }
   .policy-sections { gap: 18px; margin-top: 26px; }
   .policy-contact { justify-content: center; text-align: center; }
 }
+
+@media (max-width: 760px) {
+  .order-section {
+    background-image: linear-gradient(145deg, rgba(9,49,66,.74), rgba(12,69,87,.84));
+  }
+}
