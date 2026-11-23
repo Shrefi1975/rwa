@@ -97,7 +97,6 @@ function SiteFooter() {
           <div className="footer-brand-showcase">
             <img className="footer-logo-large" src="/rowa-logo.jpg" alt="شعار روى" />
             <span className="footer-kicker">مياهك المفضلة، من بابنا لبابك</span>
-            <h2 id="footer-brand-heading">روى</h2>
             <p className="footer-description">مياه نقية من علامات تثق بها، نوصلها إلى منزلك في جدة بكل سهولة وعناية.</p>
           </div>
 
