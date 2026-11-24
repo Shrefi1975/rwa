@@ -28,14 +28,11 @@ function HeroBanner() {
   return (
     <section id="top" className="hero-banner hero-poster-banner" aria-label="عروض توصيل المياه في جدة">
       <a href="#order" className="hero-poster-link" aria-label="اطلب المياه المفضلة لديك للتوصيل إلى المنزل">
-        <picture className="hero-poster-picture">
-          <source media="(min-width: 761px)" srcSet="/rowa-desktop-hero.jpg" />
-          <img src="/hero-water-poster-user.jpg" alt="توصيل مياه الشرب في جدة مع مجموعة من العلامات التجارية المفضلة" className="hero-poster-image" />
-        </picture>
         <span className="hero-poster-copy">
           <span className="hero-copy-kicker"><MapPin size={15} aria-hidden="true" /> توصيل مجاني داخل جدة</span>
           <h1>مياهك المفضلة،<br />واصلة لبابك.</h1>
-          <span className="hero-copy-description" style={{ lineHeight: 0, color: '#000000' }}>اختار من أشهر الماركات</span>
+          <span className="hero-copy-description">اختار من أشهر الماركات</span>
+          <span className="hero-copy-button">تسوّق الآن <ArrowLeft size={18} aria-hidden="true" /></span>
         </span>
       </a>
     </section>
