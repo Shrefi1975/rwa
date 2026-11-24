@@ -75,7 +75,6 @@ export function WaterOrderForm() {
         <span>إرسال عبر الواتساب</span>
         <ArrowLeft className="submit-arrow" size={18} aria-hidden="true" />
       </button>
-      <p className="privacy-note"><span>بالإرسال، توافق على التواصل معك بخصوص العروض.</span></p>
     </form>
   )
 }
